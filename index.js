@@ -19,9 +19,10 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildMembers, // 🔑 Sunucu üyelerini çekmek için GEREKLİ
+    GatewayIntentBits.GuildMembers, // 🔑 ekle
   ],
 });
+
 
 const prefix = process.env.PREFIX || "!";
 
