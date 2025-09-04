@@ -33,3 +33,11 @@ client.on("messageCreate", (message) => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+app.get("/ping", (req, res) => {
+  res.json({ message: "Bot Railway’de çalışıyor 🚀" });
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 API ${PORT} portunda çalışıyor`);
+});
